@@ -1,16 +1,17 @@
 import React from 'react';
+import './style.css';
 
-function Home() {
+function About() {
   return (
-    <div id="home">
+    <div id="about">
       <br />
       <br />
       <br />
       <br />
       <br />
       <br />
+      <h1>About</h1>
       <br />
-      <h1>Home</h1>
       <br />
       <br />
       <br />
@@ -21,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

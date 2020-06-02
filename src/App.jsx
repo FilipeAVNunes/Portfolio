@@ -1,22 +1,22 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/projects" component={Projects} exact />
-          <Route path="/contact" component={Contact} exact />
-        </Switch>
-      </BrowserRouter>
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

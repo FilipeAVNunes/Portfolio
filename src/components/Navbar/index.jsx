@@ -1,22 +1,54 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { Component } from 'react';
+import { Link } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
+import './style.css';
 
-function NavBar() {
-  return (
-    <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link href="/projects">Projects</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    </div>
-  );
+export class Navbar extends Component {
+  state = {};
+  render() {
+    return (
+      <div id="features" className="navbar">
+        <div onClick={() => scroll.scrollToTop()}>
+          <img src="images/FILIPENUNESFN.png" alt="FN" width="50" className="logo" />
+        </div>
+        <div className="nav">
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="about"
+          >
+            About
+          </Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="projects"
+          >
+            Projects
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="contact"
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default NavBar;
+export default Navbar;

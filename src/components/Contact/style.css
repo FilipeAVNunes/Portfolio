@@ -1,0 +1,16 @@
+.contactform {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.success {
+  color: #0ff40f;
+}
+
+.error {
+  color: #960303;
+}
+
+.submitbtn {
+  margin: 1em;
+}

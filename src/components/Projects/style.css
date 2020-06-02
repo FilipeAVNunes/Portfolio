@@ -1,0 +1,19 @@
+#projects-content {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100rem 100rem 100rem;
+  grid-gap: 10rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  margin-right: 1rem;
+}

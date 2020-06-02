@@ -1,0 +1,46 @@
+#features {
+  font-size: larger;
+}
+
+.logo:hover {
+  transition: transform 0.3s;
+  transform: scale(1.15);
+}
+
+.about:hover {
+  transition: transform 0.3s;
+  transform: scale(1.15);
+  border-bottom: 1px solid black;
+}
+
+.projects:hover {
+  transition: transform 0.3s;
+  transform: scale(1.15);
+  border-bottom: 1px solid black;
+}
+
+.contact:hover {
+  transition: transform 0.3s;
+  transform: scale(1.15);
+  border-bottom: 1px solid black;
+}
+
+.nav > .active {
+  transition: transform 0.3s;
+  transform: scale(1.15);
+  border-bottom: 1px solid black;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.about {
+  margin-right: 1rem;
+}
+
+.projects {
+  margin-right: 1rem;
+}
