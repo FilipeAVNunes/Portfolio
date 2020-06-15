@@ -1,3 +1,32 @@
 li {
   list-style-type: none;
 }
+
+.foto {
+  width: 15%;
+  border-radius: 45%;
+}
+
+.textabout {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3em 0;
+}
+
+article {
+  width: 40%;
+}
+
+#about {
+  padding: 5em;
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 3em;
+}
+
+li {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.1em;
+}
