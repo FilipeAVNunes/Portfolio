@@ -44,7 +44,7 @@ const Contact = () => {
   };
   return (
     <div id="contact">
-      <h1>Contact</h1>
+      <h1 className="title">Contact</h1>
       {result && <p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>}
       <form className="contactform" onSubmit={sendEmail}>
         <Form.Group id="name">
