@@ -2,6 +2,10 @@ footer {
   background-color: transparent;
   text-align: center;
   color: white;
-  padding: 4% 1%;
+  padding: 5% 1%;
   text-transform: capitalize;
+}
+
+.footerdev {
+  font-family: 'Open Sans Condensed', sans-serif;
 }

@@ -6,7 +6,7 @@ function Footer() {
     <div>
       <footer>
         <div>
-          <small>Developed by Filipe Nunes</small>
+          <p className="footerdev">Developed by Filipe Nunes</p>
         </div>
         <span>
           <a href="https://linkedin.com/in/filipeavnunes/">

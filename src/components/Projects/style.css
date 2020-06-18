@@ -9,7 +9,7 @@
 .centered-footheads {
   display: block;
   background: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  width: 100.2%;
   height: 100.5%;
   color: white;
   font-size: large;
@@ -41,7 +41,7 @@
 .centered-equality {
   display: block;
   background: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  width: 100.2%;
   height: 100.5%;
   color: white;
   font-size: large;
@@ -73,7 +73,7 @@
 .centered-lolz {
   display: block;
   background: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  width: 100.2%;
   height: 100.5%;
   color: white;
   font-size: large;
@@ -105,7 +105,7 @@
 .centered-kobeee {
   display: block;
   background: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  width: 100.2%;
   height: 100.5%;
   color: white;
   font-size: large;
@@ -142,4 +142,9 @@
 #projects-content {
   padding: 4em;
   margin: 1.5em 0;
+}
+
+#projects p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
 }

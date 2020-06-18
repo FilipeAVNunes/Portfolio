@@ -48,42 +48,42 @@ const Contact = () => {
       {result && <p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>}
       <form className="contactform" onSubmit={sendEmail}>
         <Form.Group id="name">
-          <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
             name="name"
+            className="form-input"
             value={state.name}
             placeholder="Enter your name"
             onChange={handleInputChange}
           />
         </Form.Group>
         <Form.Group id="email">
-          <Form.Label>Email</Form.Label>
           <Form.Control
             type="text"
             name="email"
+            className="form-input"
             value={state.email}
             placeholder="Enter your email"
             onChange={handleInputChange}
           />
         </Form.Group>
         <Form.Group id="subject">
-          <Form.Label>Subject</Form.Label>
           <Form.Control
             type="text"
             name="subject"
+            className="form-input"
             value={state.subject}
             placeholder="Enter subject"
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Form.Group id="subject">
-          <Form.Label>Message</Form.Label>
+        <Form.Group id="message">
           <Form.Control
             as="textarea"
             name="message"
+            className="form-input"
             value={state.message}
-            rows="3"
+            rows="2"
             placeholder="Enter your message"
             onChange={handleInputChange}
           />
