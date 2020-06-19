@@ -47,26 +47,28 @@ const Contact = () => {
       <h1 className="title">Contact</h1>
       {result && <p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>}
       <form className="contactform" onSubmit={sendEmail}>
-        <Form.Group id="name">
-          <Form.Control
-            type="text"
-            name="name"
-            className="form-input"
-            value={state.name}
-            placeholder="Enter your name"
-            onChange={handleInputChange}
-          />
-        </Form.Group>
-        <Form.Group id="email">
-          <Form.Control
-            type="text"
-            name="email"
-            className="form-input"
-            value={state.email}
-            placeholder="Enter your email"
-            onChange={handleInputChange}
-          />
-        </Form.Group>
+        <div className="nameplusemail">
+          <Form.Group id="name">
+            <Form.Control
+              type="text"
+              name="name"
+              className="form-input"
+              value={state.name}
+              placeholder="Enter your name"
+              onChange={handleInputChange}
+            />
+          </Form.Group>
+          <Form.Group id="email">
+            <Form.Control
+              type="text"
+              name="email"
+              className="form-input"
+              value={state.email}
+              placeholder="Enter your email"
+              onChange={handleInputChange}
+            />
+          </Form.Group>
+        </div>
         <Form.Group id="subject">
           <Form.Control
             type="text"

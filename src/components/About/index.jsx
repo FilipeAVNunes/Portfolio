@@ -7,7 +7,7 @@ function About() {
       <h1>About</h1>
       <div>
         <div className="textabout">
-          <img src="images/Filipe Nunes.jpeg" alt="foto" className="foto" />
+          <img src="images/FilipeNunes.jpeg" alt="foto" className="foto" />
           <article>
             Hi! My name is Filipe Nunes and I'm a Junior Full-Stack Web Developer. I used to be a
             Salesman, but I have a passion for learning, so I took the risk, quitted of being a
