@@ -50,9 +50,8 @@ function Projects() {
               <img src="images/kobeee.png" alt="kobeee" className="img-fluid" />
               <div className="centered-kobeee">
                 <p>
-                  Simple Basketball game, the user needs to press the SHOOT button in the interval
-                  to make a basket. It speeds up with how many baskets the user makes. When you
-                  miss, you lose.
+                  Basketball game, the user needs to press the SHOOT button in the interval to make
+                  a basket. It speeds up with how many baskets the user makes.
                 </p>
               </div>
             </a>
