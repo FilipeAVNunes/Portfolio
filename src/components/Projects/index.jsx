@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import './style.css';
 
-function Projects() {
+const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div id="projects">
       <h1>Projects</h1>
-      <div id="projects-content" className=" container-fluid">
+      <div id="projects-content" className=" container-fluid" data-aos="fade-right">
         <div className="row">
           <div className="column footheads">
             <a href="https://footheads.herokuapp.com/">
@@ -60,6 +65,6 @@ function Projects() {
       </div>
     </div>
   );
-}
+};
 
 export default Projects;
