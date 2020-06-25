@@ -4,7 +4,6 @@ import { animateScroll as scroll } from 'react-scroll';
 import './style.css';
 
 export class Navbar extends Component {
-  state = {};
   render() {
     return (
       <div id="features" className="navbar">

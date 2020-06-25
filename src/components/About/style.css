@@ -1,27 +1,33 @@
-li {
-  list-style-type: none;
-}
-
 .foto {
-  width: 17%;
-  border-radius: 5%;
+  width: 105.5%;
 }
 
 .textabout {
   display: flex;
-  justify-content: space-evenly;
   margin: 3em 0;
+  background-color: #f8fafd;
 }
 
-article {
-  width: 40%;
-  height: 90%;
+.about-img {
+  display: flex;
+  align-self: flex-start;
+}
+
+.textabout .aboutxt {
+  width: 150%;
+  padding: 2em 8em;
   font-weight: 600;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+article {
+  margin-top: 2em;
+}
+
 #about {
-  padding: 5em;
+  margin: 0 auto;
+  padding: 2em 5em 5em 5em;
+  width: 80%;
 }
 
 h1 {
@@ -32,4 +38,9 @@ h1 {
 li {
   font-family: 'Staatliches', cursive;
   font-size: 1.1em;
+  list-style-type: none;
+}
+
+h3 {
+  font-family: 'Staatliches', cursive;
 }

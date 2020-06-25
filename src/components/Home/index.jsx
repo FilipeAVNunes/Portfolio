@@ -3,8 +3,9 @@ import './style.css';
 
 function Home() {
   return (
-    <div id="home">
-      <h1>HOME</h1>
+    <div id="home" className="container-fluid">
+      <img src="images/ProfileHorizontal.jpg" alt="foto" className="landingPic" />
+      <h1></h1>
     </div>
   );
 }

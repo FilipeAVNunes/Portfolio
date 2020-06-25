@@ -10,20 +10,20 @@ const Projects = () => {
   return (
     <div id="projects">
       <h1>Projects</h1>
-      <div id="projects-content" className=" container-fluid" data-aos="fade-right">
+      <div id="projects-content" className=" container-fluid">
         <div className="row">
-          <div className="column footheads">
+          <div className="column footheads" data-aos="fade-down-right">
             <a href="https://footheads.herokuapp.com/">
               <img src="images/footheads.png" alt="footheads" className="img-fluid" />
               <div className="centered-footheads">
                 <p>
-                  This is an app that allows you to predict scores and check what other users think
+                  This is an app that allowsk you to predict scores and check what other users think
                   and also check scores, league tables and share comments and stories.
                 </p>
               </div>
             </a>
           </div>
-          <div className="column equality">
+          <div className="column equality" data-aos="fade-down-left">
             <a href="https://equality-collective.netlify.com/">
               <img
                 src="images/equality-collective.png"
@@ -40,7 +40,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="row">
-          <div className="column lolz">
+          <div className="column lolz" data-aos="fade-up-right">
             <a href="https://fullstack-froject2-ironhack.herokuapp.com/">
               <img src="images/4lolz.png" alt="4lolz" className="img-fluid" />
               <div className="centered-lolz">
@@ -50,7 +50,7 @@ const Projects = () => {
               </div>
             </a>
           </div>
-          <div className="column kobeee">
+          <div className="column kobeee" data-aos="fade-up-left">
             <a href="https://kobeeebyfilipenunes.netlify.com/">
               <img src="images/kobeee.png" alt="kobeee" className="img-fluid" />
               <div className="centered-kobeee">
