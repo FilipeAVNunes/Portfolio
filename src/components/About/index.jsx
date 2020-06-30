@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import './style.css';
 
-function About() {
+const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div id="about">
       <div className="textabout">
-        <div className="about-img">
+        <div className="about-img" data-aos="fade-right">
           <img src="images/FilipeNunes.jpeg" alt="foto" className="foto" />
         </div>
-        <div className="aboutxt">
+        <div className="aboutxt" data-aos="fade-left">
           <h1>About</h1>
           <article>
             Hi! My name is Filipe Nunes and I'm a Junior Full-Stack Web Developer. I used to be a
@@ -23,20 +28,20 @@ function About() {
       </div>
       <h3>Some technologies I've worked with</h3>
       <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript ES6</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>MongoDB</li>
-        <li>Mongoose</li>
-        <li>Bootstrap</li>
-        <li>Github</li>
-        <li>Git</li>
+        <li data-aos="fade-right">HTML5</li>
+        <li data-aos="fade-left">CSS3</li>
+        <li data-aos="fade-right">JavaScript ES6</li>
+        <li data-aos="fade-left">React.js</li>
+        <li data-aos="fade-right">Node.js</li>
+        <li data-aos="fade-left">Express.js</li>
+        <li data-aos="fade-right">MongoDB</li>
+        <li data-aos="fade-left">Mongoose</li>
+        <li data-aos="fade-right">Bootstrap</li>
+        <li data-aos="fade-left">Github</li>
+        <li data-aos="fade-right">Git</li>
       </ul>
     </div>
   );
-}
+};
 
 export default About;
