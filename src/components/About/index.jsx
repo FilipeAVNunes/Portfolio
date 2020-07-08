@@ -17,7 +17,7 @@ const About = () => {
           <h1>About</h1>
           <article>
             Hi! My name is Filipe Nunes and I'm a Junior Full-Stack Web Developer. I used to be a
-            Salesman, but I have a passion for learning, so I took the risk, quitted of being a
+            Salesman, but since I have a passion for learning, I took the risk, quitted of being a
             Salesman and embarked in a Full-Stack Web Development Bootcamp by Ironhack Lisbon. It
             fed my desire of learning more and lit up even more the passion that I've had for the
             area. It proved to be a very fruitful experience where I worked on 4 different projects
