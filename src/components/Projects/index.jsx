@@ -13,27 +13,24 @@ const Projects = () => {
       <div id="projects-content" className=" container-fluid">
         <div className="row">
           <div className="column footheads" data-aos="fade-down-right">
-            <a href="https://footheads.herokuapp.com/">
-              <img src="images/footheads.png" alt="footheads" className="img-fluid" />
+              <img src="images/portfoliopage.png" alt="footheads" className="img-fluid" />
               <div className="centered-footheads">
-                <p>
-                  This is an app that allowsk you to predict scores and check what other users think
-                  and also check scores, league tables and share comments and stories.
+                <p>This very own Website <br/>
+                
                 </p>
               </div>
-            </a>
           </div>
           <div className="column equality" data-aos="fade-down-left">
-            <a href="https://equality-collective.netlify.com/">
+            <a href="https://https://footheads.herokuapp.com//">
               <img
-                src="images/equality-collective.png"
+                src="images/footheads.png"
                 alt="equality collective"
                 className="img-fluid"
               />
               <div className="centered-equality">
                 <p>
-                  The user can check how's the gender equality in different areas and companies.
-                  Salaries, salaries per position, number of male and female workers, etc.
+                This is an app that allowsk you to predict scores and check what other users think
+                  and also check scores, league tables and share comments and stories.
                 </p>
               </div>
             </a>
