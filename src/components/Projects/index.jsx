@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import './style.css';
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "./style.css";
+
+import ProjectsCarousel from "../ProjectsCarousel/projects-carousel.component";
 
 const Projects = () => {
   useEffect(() => {
@@ -10,6 +12,8 @@ const Projects = () => {
   return (
     <div id="projects">
       <h1>Projects</h1>
+      <ProjectsCarousel />
+      {/*
       <div id="projects-content" className=" container-fluid">
         <div className="row">
           <div className="column footheads" data-aos="fade-down-right">
@@ -21,7 +25,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="column equality" data-aos="fade-down-left">
-            <a href="https://https://footheads.herokuapp.com//">
+            <a href="https://https://footheads.herokuapp.com/">
               <img
                 src="images/footheads.png"
                 alt="equality collective"
@@ -60,6 +64,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+    */}
     </div>
   );
 };

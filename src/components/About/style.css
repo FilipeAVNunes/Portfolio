@@ -43,4 +43,10 @@ li {
 
 h3 {
   font-family: 'Staatliches', cursive;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding: 1rem;
+  background-color: #f8fafd;
 }
