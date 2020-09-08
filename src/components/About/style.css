@@ -50,3 +50,21 @@ ul {
   padding: 1rem;
   background-color: #f8fafd;
 }
+
+.tech {
+  display: flex;
+  align-content: space-between;
+}
+
+.left {
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.center {
+  flex-direction: column;
+}
+
+.right {
+  flex-direction: column;
+}
