@@ -24,11 +24,12 @@
   transform: scale(1.15);
   border-bottom: 1px solid black;
 }
+
 .nav {
   font-family: 'Staatliches', cursive;
 }
 
-.nav > .active {
+.nav>.active {
   transition: transform 0.3s;
   transform: scale(1.15);
   border-bottom: 1px solid black;
@@ -47,4 +48,15 @@
 
 .projects {
   margin-right: 1rem;
+}
+
+span {
+  font-size: 30px;
+  font-family: 'Staatliches', cursive;
+  cursor: pointer;
+}
+
+span:hover {
+  transition: transform 0.3s;
+  transform: scale(1.15);
 }

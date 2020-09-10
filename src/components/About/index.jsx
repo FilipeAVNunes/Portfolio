@@ -28,6 +28,7 @@ const About = () => {
           </article>
         </div>
       </div>
+      {/*
       <h3>Some technologies I've worked with</h3>
       <div className="tech">
         <ul>
@@ -50,7 +51,7 @@ const About = () => {
             <li data-aos="fade-left">Git</li>
           </div>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
-import './style.css';
-import axios from 'axios';
+import React, { useState } from "react";
+import { Form, Button } from "react-bootstrap";
+import "./style.css";
+import axios from "axios";
 
 const Contact = () => {
   const [state, setState] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const [result, setResult] = useState(null);
@@ -16,20 +16,20 @@ const Contact = () => {
   const sendEmail = (event) => {
     event.preventDefault();
     axios
-      .post('/send', { ...state })
+      .post("/send", { ...state })
       .then((response) => {
         setResult(response.data);
         setState({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
         });
       })
       .catch(() => {
         setResult({
           success: false,
-          message: 'Something went wrong. Try again later',
+          message: "Something went wrong. Try again later",
         });
       });
   };
@@ -44,8 +44,12 @@ const Contact = () => {
   };
   return (
     <div id="contact">
-      <h1 className="title">Contact</h1>
-      {result && <p className={`${result.success ? 'success' : 'error'}`}>{result.message}</p>}
+      <h1 className="title">Contact me</h1>
+      {result && (
+        <p className={`${result.success ? "success" : "error"}`}>
+          {result.message}
+        </p>
+      )}
       <form className="contactform" onSubmit={sendEmail}>
         <div className="nameplusemail">
           <Form.Group id="name">
@@ -54,7 +58,7 @@ const Contact = () => {
               name="name"
               className="form-input"
               value={state.name}
-              placeholder="Enter your name"
+              placeholder="Name"
               onChange={handleInputChange}
             />
           </Form.Group>
@@ -64,7 +68,7 @@ const Contact = () => {
               name="email"
               className="form-input"
               value={state.email}
-              placeholder="Enter your email"
+              placeholder="Email"
               onChange={handleInputChange}
             />
           </Form.Group>
@@ -75,7 +79,7 @@ const Contact = () => {
             name="subject"
             className="form-input"
             value={state.subject}
-            placeholder="Enter subject"
+            placeholder="Subject"
             onChange={handleInputChange}
           />
         </Form.Group>
@@ -86,7 +90,7 @@ const Contact = () => {
             className="form-input"
             value={state.message}
             rows="2"
-            placeholder="Enter your message"
+            placeholder="Message"
             onChange={handleInputChange}
           />
         </Form.Group>

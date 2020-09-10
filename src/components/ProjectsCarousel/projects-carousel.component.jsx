@@ -13,7 +13,7 @@ const ProjectsCarousel = () => {
   }, []);
   return (
     <div>
-      <Carousel data-aos="fade-up">
+      <Carousel className="carousel" data-aos="fade-up">
         <Carousel.Item>
           <img
             className="d-block w-100"
