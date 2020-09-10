@@ -1,11 +1,12 @@
 .foto {
-  width: 105.5%;
+  width: 26vw;
 }
 
 .textabout {
   display: flex;
   margin: 3em 0;
   background-color: #f8fafd;
+  width: 100%;
 }
 
 .about-img {
@@ -15,16 +16,18 @@
 
 .textabout .aboutxt {
   width: 150%;
-  padding: 2em 8em;
+  padding: 0.5em 8em;
   font-weight: 600;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2vw;
 }
 
 article {
-  margin-top: 2em;
+  margin-top: -1.5em;
 }
 
 #about {
+  display: flex;
   margin: 0 auto;
   padding: 2em 5em 5em 5em;
   width: 80%;
@@ -49,22 +52,4 @@ h3 {
 ul {
   padding: 1rem;
   background-color: #f8fafd;
-}
-
-.tech {
-  display: flex;
-  align-content: space-between;
-}
-
-.left {
-  flex-direction: column;
-  align-content: flex-start;
-}
-
-.center {
-  flex-direction: column;
-}
-
-.right {
-  flex-direction: column;
 }
