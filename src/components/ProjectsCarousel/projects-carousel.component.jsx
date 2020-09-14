@@ -28,7 +28,7 @@ const ProjectsCarousel = () => {
             >
               Check out more!
             </Button>
-            <p>E-commerce website with React.js.</p>
+            <p>Simple E-commerce website with React.js.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -47,8 +47,8 @@ const ProjectsCarousel = () => {
               Check out more!
             </Button>
             <p style={{ color: "black" }}>
-              Football results, blog posts, league tables and score prediction
-              from the users.
+              Football results, blog posts, leagues and score prediction from
+              the users.
             </p>
           </Carousel.Caption>
         </Carousel.Item>

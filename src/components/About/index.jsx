@@ -9,7 +9,21 @@ const About = () => {
   }, []);
   return (
     <div id="about">
-      <div className="textabout">
+      <div className="item_description">
+        <div className="image"></div>
+        <div className="desc">
+          <h1>About me</h1>
+          Hi! My name is Filipe Nunes and I'm a Junior Full-Stack Web Developer.
+          I used to be a Salesman, but since I have a passion for learning, I
+          took the risk, quitted of being a Salesman and embarked in a
+          Full-Stack Web Development Bootcamp by Ironhack Lisbon. It fed my
+          desire of learning more and lit up even more the passion that I've had
+          for the area. It proved to be a very fruitful experience where I
+          worked on 4 different projects with people from different countries
+          and where I learned a whole lot of languages and frameworks.
+        </div>
+      </div>
+      {/*<div className="textabout">
         <div className="about-img" data-aos="fade-up">
           <img src="images/FilipeNunes.jpeg" alt="foto" className="foto" />
         </div>
@@ -27,7 +41,7 @@ const About = () => {
             frameworks.
           </article>
         </div>
-      </div>
+      </div>*/}
       {/*
       <h3>Some technologies I've worked with</h3>
       <div className="tech">

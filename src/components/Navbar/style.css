@@ -44,10 +44,16 @@
 
 .about {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .projects {
   margin-right: 1rem;
+  cursor: pointer;
+}
+
+.contact {
+  cursor: pointer;
 }
 
 span {
