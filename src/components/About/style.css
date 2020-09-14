@@ -1,57 +1,12 @@
-.foto {
-  width: 26vw;
-}
-
-.textabout {
-  display: flex;
-  margin: 3em 0;
-  background-color: #f8fafd;
-  width: 100%;
-}
-
-.about-img {
-  display: flex;
-  align-self: flex-start;
-}
-
-.textabout .aboutxt {
-  width: 150%;
-  padding: 0.5em 8em;
-  font-weight: 600;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.2vw;
-}
-
-article {
-  margin-top: -1.5em;
-}
-
-#about {
-  display: flex;
-  margin: 0 auto;
-  padding: 2em 5em 5em 5em;
-  width: 80%;
-}
-
 h1 {
   font-family: "Staatliches", cursive;
   font-size: 3em;
 }
 
-li {
-  font-family: "Staatliches", cursive;
-  font-size: 1.1em;
-  list-style-type: none;
-}
 
 h3 {
   font-family: "Staatliches", cursive;
   margin-bottom: 1rem;
-}
-
-ul {
-  padding: 1rem;
-  background-color: #f8fafd;
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
@@ -59,9 +14,15 @@ ul {
 * {
   box-sizing: border-box;
 }
-.item_description {
-  width: 100%;
+
+#about {
+  display: flex;
+  margin: 0 auto;
+  padding: 2em 3em;
+  width: 80%;
+  height: 100%;
 }
+
 .image {
   height: 0;
   padding-bottom: 40%;
@@ -71,21 +32,51 @@ ul {
   background-position: center center;
   position: relative;
   width: 40%;
+  height: 500px;
 }
+
 .desc,
 .image {
   float: left;
   display: block;
 }
+
 .desc {
   width: 60%;
   text-align: center;
   padding: 20px;
 }
-@media (max-width: 600px) {
+
+.abouttxt {
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+
+  #about {
+    padding: 0;
+    display: block;
+  }
+
   .desc,
   .image {
+    margin: 0 auto;
+    height: 80%;
     float: none;
+    width: 100%;
+  }
+
+  .image {
+    height: 450px;
+    max-width: 400px;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .abouttxt {
     width: 100%;
   }
 }

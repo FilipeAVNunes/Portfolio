@@ -38,7 +38,7 @@ const Home = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div data-aos="fade-down">
+    <div className="header" data-aos="fade-down">
       <Box className={classes.typedContainer}>
         <Grid container justify="center">
           <Avatar
