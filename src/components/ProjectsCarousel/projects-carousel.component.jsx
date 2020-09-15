@@ -17,13 +17,13 @@ const ProjectsCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="images/crwn-clothing.png"
+            src="images/crwn-clothingdark.png"
             alt="First slide"
           />
           <Carousel.Caption data-aos="zoom-in-up">
             <Button
               className="check-out-more"
-              variant="outline-dark"
+              variant="outline-light"
               href="https://crwn-clothing-byfilipenunes.herokuapp.com/"
             >
               Check out more!
@@ -34,19 +34,19 @@ const ProjectsCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="images/footheads.png"
+            src="images/footheadsdark.png"
             alt="Third slide"
           />
 
           <Carousel.Caption>
             <Button
               className="check-out-more"
-              variant="outline-dark"
+              variant="outline-light"
               href="https://footheads.herokuapp.com/"
             >
               Check out more!
             </Button>
-            <p style={{ color: "black" }}>
+            <p style={{ color: "white" }}>
               Football results, blog posts, leagues and score prediction from
               the users.
             </p>
@@ -55,14 +55,14 @@ const ProjectsCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="images/4lolz.png"
+            src="images/4lolzdark.png"
             alt="Third slide"
           />
 
           <Carousel.Caption>
             <Button
               className="check-out-more"
-              variant="outline-dark"
+              variant="outline-light"
               href="https://fullstack-froject2-ironhack.herokuapp.com/"
             >
               Check out more!
@@ -73,14 +73,14 @@ const ProjectsCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="images/kobeee.png"
+            src="images/kobeeedark.png"
             alt="Third slide"
           />
 
           <Carousel.Caption>
             <Button
               className="check-out-more"
-              variant="outline-dark"
+              variant="outline-light"
               href="https://kobeeebyfilipenunes.netlify.app/"
             >
               Check out more!

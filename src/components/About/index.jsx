@@ -9,8 +9,8 @@ const About = () => {
   }, []);
   return (
     <div id="about">
-      <div className="image"></div>
-      <div className="desc">
+      <div className="image" data-aos="fade-up"></div>
+      <div className="desc" data-aos="fade-down">
         <h1>About me</h1>
         <div className="abouttxt">
           Hi! My name is Filipe Nunes and I'm a Junior Full-Stack Web Developer.

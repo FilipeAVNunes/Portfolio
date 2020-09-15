@@ -42,12 +42,14 @@ h3 {
 }
 
 .desc {
+  background-color: rgba(214, 214, 214, 0.09);
   width: 60%;
   text-align: center;
   padding: 20px;
 }
 
 .abouttxt {
+  font-family: Sans-Serif;
   text-align: center;
   padding: 20px;
 }
