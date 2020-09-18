@@ -12,7 +12,7 @@ const ProjectsCarousel = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div>
+    <div className="projectcarousel">
       <Carousel className="carousel" data-aos="fade-up">
         <Carousel.Item>
           <img
@@ -20,7 +20,7 @@ const ProjectsCarousel = () => {
             src="images/crwn-clothingdark.png"
             alt="First slide"
           />
-          <Carousel.Caption data-aos="zoom-in-up">
+          <Carousel.Caption data-aos="zoom-in-up" className="d-block mh-100">
             <Button
               className="check-out-more"
               variant="outline-light"
@@ -38,7 +38,7 @@ const ProjectsCarousel = () => {
             alt="Third slide"
           />
 
-          <Carousel.Caption>
+          <Carousel.Caption className="d-block mh-100">
             <Button
               className="check-out-more"
               variant="outline-light"
@@ -59,7 +59,7 @@ const ProjectsCarousel = () => {
             alt="Third slide"
           />
 
-          <Carousel.Caption>
+          <Carousel.Caption className="d-block mh-100">
             <Button
               className="check-out-more"
               variant="outline-light"
@@ -77,7 +77,7 @@ const ProjectsCarousel = () => {
             alt="Third slide"
           />
 
-          <Carousel.Caption>
+          <Carousel.Caption className="d-block mh-100">
             <Button
               className="check-out-more"
               variant="outline-light"

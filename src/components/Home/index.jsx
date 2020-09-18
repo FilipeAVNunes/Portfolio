@@ -59,11 +59,7 @@ const Home = () => {
           variant="h5"
         >
           <Typed
-            strings={[
-              "Fullstack Web Developer",
-              "MERN Stack",
-              "Web Development",
-            ]}
+            strings={["Fullstack Web Dev", "MERN Stack", "Web Development"]}
             typeSpeed={40}
             backSpeed={60}
             loop
