@@ -9,3 +9,9 @@ footer {
 .footerdev {
   font-family: 'Open Sans Condensed', sans-serif;
 }
+
+@media (max-width: 955px) {
+  footer {
+    margin: 3em 0;
+  }
+}

@@ -6,36 +6,50 @@
   margin: auto 5vw;
 }
 
-.tech-container {
+.tech-stack {
   display: flex;
   justify-content: space-evenly;
+  background-color: rgba(214, 214, 214, 0.09);
 }
 
 .tech-column {
   display: flex;
   flex-direction: column;
-  padding: 0.5em;
+  padding: 1em;
   flex: 1;
-  margin: 0 0.5em;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 0.5em;
 
-  h6 {
-    font-size: 1em;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
+  h4 {
+    font-family: "Staatliches", cursive;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
   }
 
   ul {
-    padding: 0;
     list-style: none;
     text-align: center;
 
     li {
-      font-weight: 300;
+      font-weight: 350;
       line-height: 2em;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .tech {
+    margin: 0 auto;
+    padding: 2em 4em;
+
+    .tech-stack {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tech-column {
+      margin-bottom: 2em;
     }
   }
 }
