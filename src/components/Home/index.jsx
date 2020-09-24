@@ -53,13 +53,16 @@ const Home = () => {
           <Typed strings={["Filipe Nunes"]} typeSpeed={40} />
         </Typography>
         <br />
-        <Typography
-          data-aos="fade-down"
-          className={classes.subtitle}
-          variant="h5"
-        >
+        <Typography className={classes.subtitle} variant="h5">
           <Typed
-            strings={["Fullstack Web Dev", "MERN Stack", "Web Development"]}
+            strings={[
+              "Fullstack Web Dev",
+              "MERN Stack",
+              "Web Development",
+              "Coding",
+              "Learner",
+              "Hard worker",
+            ]}
             typeSpeed={40}
             backSpeed={60}
             loop
