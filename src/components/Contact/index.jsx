@@ -1,55 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
 import "./style.css";
-import axios from "axios";
 
 const Contact = () => {
-  const [state, setState] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
-  const [result, setResult] = useState(null);
+  function sendEmail(e) {
+    e.preventDefault();
 
-  const sendEmail = (event) => {
-    event.preventDefault();
-    axios
-      .post("/send", { ...state })
-      .then((response) => {
-        setResult(response.data);
-        setState({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-      })
-      .catch(() => {
-        setResult({
-          success: false,
-          message: "Something went wrong. Try again later",
-        });
-      });
-  };
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_3se0pyl",
+        e.target,
+        "user_FyXQZXeW6ianehc8nxge4"
+      )
+      .then(
+        (result) => {
+          alert(
+            "Your message was sent successfully. Will get back to you shortly."
+          );
+          console.log(result.text);
+        },
+        (error) => {
+          alert("There has been an error. Try again later.");
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-
-    setState({
-      ...state,
-      [name]: value,
-    });
-  };
   return (
     <div id="contact">
       <h1 className="title">Contact me</h1>
-      {result && (
-        <p className={`${result.success ? "success" : "error"}`}>
-          {result.message}
-        </p>
-      )}
       <form className="contactform" onSubmit={sendEmail}>
         <div className="nameplusemail">
           <Form.Group id="name">
@@ -57,9 +45,9 @@ const Contact = () => {
               type="text"
               name="name"
               className="form-input"
-              value={state.name}
+              data-aos="fade-up"
               placeholder="Name"
-              onChange={handleInputChange}
+              required
             />
           </Form.Group>
           <Form.Group id="email">
@@ -67,9 +55,9 @@ const Contact = () => {
               type="text"
               name="email"
               className="form-input"
-              value={state.email}
+              data-aos="fade-up"
               placeholder="Email"
-              onChange={handleInputChange}
+              required
             />
           </Form.Group>
         </div>
@@ -78,9 +66,9 @@ const Contact = () => {
             type="text"
             name="subject"
             className="form-input"
-            value={state.subject}
+            data-aos="fade-up"
             placeholder="Subject"
-            onChange={handleInputChange}
+            required
           />
         </Form.Group>
         <Form.Group id="message">
@@ -88,13 +76,18 @@ const Contact = () => {
             as="textarea"
             name="message"
             className="form-input"
-            value={state.message}
+            data-aos="fade-up"
             rows="2"
             placeholder="Message"
-            onChange={handleInputChange}
+            required
           />
         </Form.Group>
-        <Button variant="outline-dark" type="submit" className="submitbtn">
+        <Button
+          variant="outline-dark"
+          type="submit"
+          data-aos="fade-up"
+          className="submitbtn"
+        >
           Submit
         </Button>
       </form>
