@@ -25,11 +25,9 @@ const Contact = () => {
           alert(
             "Your message was sent successfully. Will get back to you shortly."
           );
-          console.log(result.text);
         },
         (error) => {
           alert("There has been an error. Try again later.");
-          console.log(error.text);
         }
       );
     e.target.reset();
