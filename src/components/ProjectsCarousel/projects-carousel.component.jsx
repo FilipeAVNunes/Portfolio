@@ -28,7 +28,7 @@ const ProjectsCarousel = () => {
             >
               Check out more!
             </Button>
-            <p>Simple E-commerce website with React.js.</p>
+            <p>Still in progress E-commerce website with React.js.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
