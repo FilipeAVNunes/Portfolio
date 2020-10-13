@@ -1,9 +1,8 @@
 footer {
   background-color: transparent;
   text-align: center;
-  color: white;
+  color: black;
   padding: 5% 1%;
-  text-transform: capitalize;
 }
 
 .footerdev {
